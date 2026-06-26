@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atenas Style Shop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- FONDO SVG ANIMADO -->
+<div class="bg-wrap" aria-hidden="true">
+  <svg class="bg-svg" viewBox="0 0 500 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <image href="assets/fondo2.png" x="0" y="0" width="500" height="900" preserveAspectRatio="xMidYMid slice"/>
+
+    <!-- Curva neon inferior -->
+    <path class="neon-wave" d="M-20 780 Q80 720 160 760 Q240 800 320 740 Q400 680 520 720" stroke="#d48fd4" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path class="neon-wave-2" d="M-20 820 Q100 760 200 800 Q300 840 400 780 Q460 760 540 790" stroke="#f4a0c8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Corazones -->
+    <g class="heart h1"><path d="M250 140 C250 140 240 125 225 125 C210 125 200 138 200 150 C200 170 250 195 250 195 C250 195 300 170 300 150 C300 138 290 125 275 125 C260 125 250 140 250 140Z" fill="none" stroke="#e8a0d0" stroke-width="1.5"/></g>
+    <g class="heart h2"><path d="M420 200 C420 200 414 191 406 191 C398 191 392 198 392 205 C392 216 420 228 420 228 C420 228 448 216 448 205 C448 198 442 191 434 191 C426 191 420 200 420 200Z" fill="none" stroke="#c8a0e8" stroke-width="1.2"/></g>
+    <g class="heart h3"><path d="M60 300 C60 300 52 289 43 289 C34 289 26 297 26 306 C26 320 60 334 60 334 C60 334 94 320 94 306 C94 297 86 289 77 289 C68 289 60 300 60 300Z" fill="none" stroke="#f0b0d8" stroke-width="1.2"/></g>
+    <g class="heart h4"><path d="M460 520 C460 520 454 511 446 511 C438 511 432 518 432 525 C432 536 460 548 460 548 C460 548 488 536 488 525 C488 518 482 511 474 511 C466 511 460 520 460 520Z" fill="none" stroke="#d4a8f0" stroke-width="1"/></g>
+    <g class="heart h5"><path d="M30 600 C30 600 24 591 16 591 C8 591 2 598 2 605 C2 616 30 628 30 628 C30 628 58 616 58 605 C58 598 52 591 44 591 C36 591 30 600 30 600Z" fill="none" stroke="#e8b0e8" stroke-width="1"/></g>
+
+    <!-- Destellos -->
+    <g class="spark s1"><line x1="380" y1="120" x2="380" y2="108" stroke="#e0a0d0" stroke-width="1.5" stroke-linecap="round"/><line x1="374" y1="114" x2="386" y2="114" stroke="#e0a0d0" stroke-width="1.5" stroke-linecap="round"/><line x1="376" y1="110" x2="384" y2="118" stroke="#e0a0d0" stroke-width="1" stroke-linecap="round"/><line x1="384" y1="110" x2="376" y2="118" stroke="#e0a0d0" stroke-width="1" stroke-linecap="round"/></g>
+    <g class="spark s2"><line x1="80" y1="180" x2="80" y2="168" stroke="#c8a8e8" stroke-width="1.5" stroke-linecap="round"/><line x1="74" y1="174" x2="86" y2="174" stroke="#c8a8e8" stroke-width="1.5" stroke-linecap="round"/><line x1="76" y1="170" x2="84" y2="178" stroke="#c8a8e8" stroke-width="1" stroke-linecap="round"/><line x1="84" y1="170" x2="76" y2="178" stroke="#c8a8e8" stroke-width="1" stroke-linecap="round"/></g>
+    <g class="spark s3"><line x1="460" y1="380" x2="460" y2="372" stroke="#f0b0c8" stroke-width="1.2" stroke-linecap="round"/><line x1="456" y1="376" x2="464" y2="376" stroke="#f0b0c8" stroke-width="1.2" stroke-linecap="round"/></g>
+    <g class="spark s4"><line x1="20" y1="450" x2="20" y2="442" stroke="#d8a8f0" stroke-width="1.2" stroke-linecap="round"/><line x1="16" y1="446" x2="24" y2="446" stroke="#d8a8f0" stroke-width="1.2" stroke-linecap="round"/></g>
+    <g class="spark s5"><line x1="240" y1="820" x2="240" y2="812" stroke="#e0b0e0" stroke-width="1.5" stroke-linecap="round"/><line x1="234" y1="816" x2="246" y2="816" stroke="#e0b0e0" stroke-width="1.5" stroke-linecap="round"/><line x1="236" y1="812" x2="244" y2="820" stroke="#e0b0e0" stroke-width="1" stroke-linecap="round"/><line x1="244" y1="812" x2="236" y2="820" stroke="#e0b0e0" stroke-width="1" stroke-linecap="round"/></g>
+
+    <!-- Círculos decorativos -->
+    <circle class="orb o1" cx="420" cy="650" r="90" fill="rgba(232,160,208,0.10)"/>
+    <circle class="orb o2" cx="60"  cy="400" r="70" fill="rgba(200,160,240,0.08)"/>
+    <circle class="orb o3" cx="460" cy="100" r="50" fill="rgba(244,160,200,0.08)"/>
+
+    <!-- Puntos -->
+    <circle class="dot d1" cx="130" cy="250" r="3" fill="rgba(255,255,255,0.4)"/>
+    <circle class="dot d2" cx="390" cy="320" r="2.5" fill="rgba(255,255,255,0.35)"/>
+    <circle class="dot d3" cx="50"  cy="500" r="2" fill="rgba(255,255,255,0.3)"/>
+    <circle class="dot d4" cx="470" cy="700" r="3" fill="rgba(255,255,255,0.4)"/>
+    <circle class="dot d5" cx="150" cy="750" r="2" fill="rgba(255,255,255,0.3)"/>
+    <circle class="dot d6" cx="350" cy="860" r="2.5" fill="rgba(255,255,255,0.35)"/>
+  </svg>
+</div>
+
+<!-- CONTENIDO -->
+<main class="page" role="main">
+
+  <!-- Avatar / Logo -->
+  <div class="avatar-wrap">
+    <div class="avatar-ring-outer">
+      <div class="avatar-ring-inner">
+        <div class="avatar-img">
+          <img src="assets/logo.png" alt="Atenas Style Shop">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Info -->
+  <h1 class="brand-name">Atenas Style Shop</h1>
+  <p class="brand-handle">@atenas.style_ctg</p>
+  <p class="tagline">Bodega mayorista de productos de belleza</p>
+  <p class="sub-tag">✦ Compra fácil · Paga al recibir ✦</p>
+
+  <!-- Links -->
+  <nav class="links-wrap" aria-label="Links principales">
+
+    <a class="link-btn" href="TU_LINK_WEB_AQUI" target="_blank" rel="noopener" onclick="ripple(event)">
+      <span class="btn-icon-wrap">
+        <svg class="btn-svg-icon" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="9.5" stroke="white" stroke-width="1.5"/>
+          <ellipse cx="12" cy="12" rx="4" ry="9.5" stroke="white" stroke-width="1.4"/>
+          <line x1="2.5" y1="9" x2="21.5" y2="9" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+          <line x1="2.5" y1="15" x2="21.5" y2="15" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="btn-text">
+        <span class="btn-label">Página Web 24/7</span>
+        <span class="btn-sub">Haz tus pedidos en cualquier momento</span>
+      </span>
+      <span class="btn-arrow"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><circle cx="12" cy="12" r="10" fill="rgba(155,109,191,0.15)"/><path d="M10 8l4 4-4 4" stroke="#9b6dbf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+
+    <a class="link-btn" href="https://wa.me/573000000000?text=Hola,%20quiero%20información%20mayorista" target="_blank" rel="noopener" onclick="ripple(event)">
+      <span class="btn-icon-wrap">
+        <svg class="btn-svg-icon" viewBox="0 0 24 24" fill="none">
+          <path d="M20.5 3.5A11.4 11.4 0 0 0 12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6A12 12 0 0 0 12 24c6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.5ZM12 22c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A10 10 0 0 1 2 12C2 6.5 6.5 2 12 2s10 4.5 10 10-4.5 10-10 10Zm5.5-7.5c-.3-.1-1.7-.9-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5c-.1-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4C7 8.2 6 9.2 6 11.2s1.5 3.8 1.7 4.1c.2.3 2.8 4.3 6.8 6 .9.4 1.7.6 2.2.8.9.3 1.8.2 2.4.1.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.6-.5Z" fill="white"/>
+        </svg>
+      </span>
+      <span class="btn-text">
+        <span class="btn-label">WhatsApp al por mayor</span>
+        <span class="btn-sub">Atención exclusiva para mayoristas</span>
+      </span>
+      <span class="btn-arrow"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><circle cx="12" cy="12" r="10" fill="rgba(155,109,191,0.15)"/><path d="M10 8l4 4-4 4" stroke="#9b6dbf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+
+    <a class="link-btn" href="https://wa.me/573000000000?text=Hola,%20quiero%20información%20al%20detal" target="_blank" rel="noopener" onclick="ripple(event)">
+      <span class="btn-icon-wrap">
+        <svg class="btn-svg-icon" viewBox="0 0 24 24" fill="none">
+          <path d="M20.5 3.5A11.4 11.4 0 0 0 12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6A12 12 0 0 0 12 24c6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.5ZM12 22c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A10 10 0 0 1 2 12C2 6.5 6.5 2 12 2s10 4.5 10 10-4.5 10-10 10Zm5.5-7.5c-.3-.1-1.7-.9-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5c-.1-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4C7 8.2 6 9.2 6 11.2s1.5 3.8 1.7 4.1c.2.3 2.8 4.3 6.8 6 .9.4 1.7.6 2.2.8.9.3 1.8.2 2.4.1.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.6-.5Z" fill="white"/>
+        </svg>
+      </span>
+      <span class="btn-text">
+        <span class="btn-label">WhatsApp al detal</span>
+        <span class="btn-sub">Atención rápida para pedidos al detal</span>
+      </span>
+      <span class="btn-arrow"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><circle cx="12" cy="12" r="10" fill="rgba(155,109,191,0.15)"/><path d="M10 8l4 4-4 4" stroke="#9b6dbf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+
+    <a class="link-btn" href="TU_LINK_CATALOGO_PDF_AQUI" target="_blank" rel="noopener" onclick="ripple(event)">
+      <span class="btn-icon-wrap">
+        <svg class="btn-svg-icon" viewBox="0 0 24 24" fill="none">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8L14 2Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+          <polyline points="14,2 14,8 20,8" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+          <line x1="8" y1="13" x2="16" y2="13" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+          <line x1="8" y1="17" x2="13" y2="17" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="btn-text">
+        <span class="btn-label">Catálogo PDF</span>
+        <span class="btn-sub">Descarga nuestro catálogo completo</span>
+      </span>
+      <span class="btn-arrow"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><circle cx="12" cy="12" r="10" fill="rgba(155,109,191,0.15)"/><path d="M10 8l4 4-4 4" stroke="#9b6dbf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+
+  </nav>
+
+  <!-- Redes sociales -->
+  <div class="social-wrap">
+    <a href="https://instagram.com/atenas.style_ctg" target="_blank" class="social-btn" title="Instagram">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+        <rect x="2" y="2" width="20" height="20" rx="5.5" stroke="white" stroke-width="1.6"/>
+        <circle cx="12" cy="12" r="4.5" stroke="white" stroke-width="1.6"/>
+        <circle cx="17.5" cy="6.5" r="1.2" fill="white"/>
+      </svg>
+    </a>
+    <a href="https://tiktok.com/@atenas.style_ctg" target="_blank" class="social-btn" title="TikTok">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+        <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+    <a href="https://wa.me/573000000000" target="_blank" class="social-btn" title="WhatsApp">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+        <path d="M20.5 3.5A11.4 11.4 0 0 0 12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6A12 12 0 0 0 12 24c6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.5Z" stroke="white" stroke-width="1.5" fill="none"/>
+        <path d="M9 8.5c.3-.6 1-.5 1.3 0l.7 1.4c.2.4.1.8-.2 1.1l-.3.4c.3.6.8 1.2 1.4 1.6l.4-.4c.3-.3.8-.3 1.1-.1l1.5.8c.5.3.4.9 0 1.2-1.4 1-5.9-1.5-5.9-6Z" fill="white"/>
+      </svg>
+    </a>
+    <a href="TU_LINK_WEB_AQUI" target="_blank" class="social-btn" title="Página Web">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+        <circle cx="12" cy="12" r="9.5" stroke="white" stroke-width="1.6"/>
+        <ellipse cx="12" cy="12" rx="4" ry="9.5" stroke="white" stroke-width="1.4"/>
+        <line x1="2.5" y1="9" x2="21.5" y2="9" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+        <line x1="2.5" y1="15" x2="21.5" y2="15" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+    </a>
+  </div>
+
+  <footer class="footer">
+    <span class="footer-text">Gracias por elegirnos</span>
+    <svg viewBox="0 0 12 11" width="10" height="10" style="margin-left:5px;vertical-align:middle">
+      <path d="M6 10 C6 10 0.5 6 0.5 3 C0.5 1.6 1.6 0.5 3 0.5 C4.2 0.5 5.2 1.2 6 2.2 C6.8 1.2 7.8 0.5 9 0.5 C10.4 0.5 11.5 1.6 11.5 3 C11.5 6 6 10 6 10Z" fill="rgba(255,255,255,0.6)"/>
+    </svg>
+  </footer>
+
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
